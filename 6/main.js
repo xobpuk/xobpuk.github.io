@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
   num.addEventListener("input", function () {
     if (Number.isNaN(Number(num.value))) {
       alert("Неверно введенные данные");
-      num.value="";
+      num.value = "";
       return;
     }
     let t = type.value;
