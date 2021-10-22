@@ -66,13 +66,14 @@ function countPrice(option) {
       break;
     case 3:
       c.addEventListener("change", function () {
+        if(multiplier>){
         if (c.checked) {
           res = multiplier * count + Number(c.value);
           total.value = res;
         } else {
           res = multiplier * count;
           total.value = res;
-        }
+        }}
       });
       total.value = res;
       break;
