@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
   num.addEventListener("input", function () {
     if (Number.isNaN(Number(num.value))) {
       alert("Неверно введенные данные");
+      num.value="";
       return;
     }
     let t = type.value;
@@ -66,14 +67,13 @@ function countPrice(option) {
       break;
     case 3:
       c.addEventListener("change", function () {
-        if(multiplier>){
         if (c.checked) {
           res = multiplier * count + Number(c.value);
           total.value = res;
         } else {
           res = multiplier * count;
           total.value = res;
-        }}
+        }
       });
       total.value = res;
       break;
