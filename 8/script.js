@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Вызвать запрос не удалось");
     };
   }else{
-    aler("Необходимо согласие!");}
+    alert("Необходимо согласие!");}
 });
 
 function toLocalStorage() {
