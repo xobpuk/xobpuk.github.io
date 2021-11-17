@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }else{
     alert("Необходимо согласие!");}
-});
+});});
 
 function toLocalStorage() {
   const name = document.getElementById("name");
