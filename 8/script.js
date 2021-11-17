@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     toLocalStorage();
-    if(check.checked){
+    if (check.checked){
     let xhr = new XMLHttpRequest();
     let formData = new FormData(form);
     name.value = "";
@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Вызвать запрос не удалось");
     };
   }else{
-    alert("Необходимо согласие!");}
+    alert("Необходимо согласие!");
+  }
 });
 
 function toLocalStorage() {
